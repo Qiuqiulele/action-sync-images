@@ -42,7 +42,7 @@ jobs:
     steps:
       - name: 登录到 Docker 仓库
         id: login
-        run: docker login -u Bella-bei -p mengweia125.${{ github.event.inputs.TARGET_REGISTRY }}
+        run: docker login -u root -p ZZjQD9j66h8hBmztQSQhWm3kc8n5F6Vs${{ github.event.inputs.TARGET_REGISTRY }}
         continue-on-error: true
       - name: 检查 Docker 登录成功
         if: ${{ steps.login.outcome == 'success' }}
